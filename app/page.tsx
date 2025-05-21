@@ -2,6 +2,7 @@ import Hero from "./components/hero"
 import Highlights from "./components/highlights"
 import Gallery from "./components/gallery"
 import Portfolio from "./components/portfolio"
+import Testimonials from "./components/testimonials"
 import LinkedInPosts from "./components/linkedin-posts"
 import Contact from "./components/contact"
 import Footer from "./components/footer"
@@ -13,6 +14,7 @@ export default function Page() {
       <Highlights />
       <Gallery />
       <Portfolio />
+      <Testimonials />
       <LinkedInPosts />
       <Contact />
       <Footer />
