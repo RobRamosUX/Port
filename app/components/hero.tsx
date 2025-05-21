@@ -133,7 +133,7 @@ export default function Hero() {
           className="mb-8"
         >
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/010-k3GVIFwJ08Y-8joiSENG2MpAypmfQskGX9OyDricYz.jpeg"
+            src="/profile-photo.jpg"
             alt="Robson Ramos"
             className="h-40 w-40 rounded-full object-cover border-4 border-white/10"
           />
@@ -151,8 +151,8 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-        >
-          UX Manager & Creative Director
+        >Liderança em Design e Produto - UX Strategy - 
+        IA & Automação - Experiências Escaláveis
         </motion.p>
 
         <motion.div
