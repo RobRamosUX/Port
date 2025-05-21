@@ -10,7 +10,7 @@ export default function TimesPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-8">Times dos Quais Geri</h1>
         </div>
         <img
-          src="/placeholder.svg?height=1080&width=1920&query=diverse%20design%20team%20collaboration"
+          src="/diverse-design-team.png"
           alt="Times de Design"
           className="absolute inset-0 w-full h-full object-cover object-center -z-10 opacity-30"
         />
@@ -62,29 +62,33 @@ export default function TimesPage() {
           <div className="space-y-16 mb-16">
             <h2 className="text-3xl font-bold text-white mb-8">Equipes Lideradas</h2>
 
-            {/* Team 1 */}
+            {/* Team 1 - BS2 (mantido na primeira posição) */}
             <div className="bg-zinc-900 rounded-lg overflow-hidden">
+              <div className="w-full h-64 overflow-hidden">
+                <img src="/equipe-bs2.jpg" alt="Equipe de UX do Banco BS2" className="w-full h-full object-cover" />
+              </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">Equipe de UX no Banco BS2</h3>
-                <p className="text-emerald-400 mb-6">2022 - Presente</p>
+                <p className="text-emerald-400 mb-6">2024 - Atual</p>
                 <p className="text-gray-400 mb-6">
-                  Lidero uma equipe multidisciplinar de 12 profissionais, incluindo UX designers, UI designers,
-                  pesquisadores e content designers. Juntos, redesenhamos completamente a plataforma digital do banco,
-                  resultando em um aumento significativo na satisfação do cliente e na eficiência operacional.
+                  Liderei uma equipe multidisciplinar de 8 profissionais, incluindo Product designers, pesquisadores e
+                  content designers. Juntos, redesenhamos completamente a plataforma digital do banco, resultando em um
+                  aumento significativo na satisfação do cliente e na eficiência operacional.
                 </p>
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-white mb-3">Composição da Equipe:</h4>
                   <ul className="text-gray-400 space-y-2 list-disc pl-5">
-                    <li>5 UX/UI Designers</li>
-                    <li>3 Pesquisadores UX</li>
-                    <li>2 Content Designers</li>
-                    <li>2 Product Designers</li>
+                    <li>2 Pesquisadores UX</li>
+                    <li>1 Content Designers</li>
+                    <li>5 Product Designers</li>
+                    <li>1 Lead UX</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-3">Principais Conquistas:</h4>
                   <ul className="text-gray-400 space-y-2 list-disc pl-5">
                     <li>Implementação de um design system unificado</li>
+                    <li>Uma Home totalmente repensada com base em pesquisa para o APP</li>
                     <li>Redução de 40% no tempo de conclusão de tarefas pelos usuários</li>
                     <li>Aumento de 60% na satisfação do cliente com a plataforma digital</li>
                     <li>Estabelecimento de processos de design centrado no usuário em toda a organização</li>
@@ -93,50 +97,27 @@ export default function TimesPage() {
               </div>
             </div>
 
-            {/* Team 2 */}
+            {/* Team 2 - Boticário (movido da terceira para a segunda posição) */}
             <div className="bg-zinc-900 rounded-lg overflow-hidden">
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-2">Equipe de UX no Itaú Unibanco</h3>
-                <p className="text-emerald-400 mb-6">2019 - 2022</p>
-                <p className="text-gray-400 mb-6">
-                  Liderou uma equipe de 8 profissionais responsáveis pelo design de experiência do usuário para produtos
-                  financeiros digitais. Implementou metodologias de pesquisa com usuários e testes de usabilidade que
-                  resultaram em melhorias significativas na experiência do cliente.
-                </p>
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-white mb-3">Composição da Equipe:</h4>
-                  <ul className="text-gray-400 space-y-2 list-disc pl-5">
-                    <li>4 UX/UI Designers</li>
-                    <li>2 Pesquisadores UX</li>
-                    <li>2 Designers de Interação</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-white mb-3">Principais Conquistas:</h4>
-                  <ul className="text-gray-400 space-y-2 list-disc pl-5">
-                    <li>Redesenho do aplicativo móvel com aumento de 40% na satisfação do usuário</li>
-                    <li>Implementação de processos de design thinking em toda a organização</li>
-                    <li>Desenvolvimento de um programa de pesquisa contínua com usuários</li>
-                    <li>Criação de um laboratório de usabilidade interno</li>
-                  </ul>
-                </div>
+              <div className="w-full h-64 overflow-hidden">
+                <img
+                  src="/equipe-boticario.jpg"
+                  alt="Equipe de Design do Grupo Boticário"
+                  className="w-full h-full object-cover"
+                />
               </div>
-            </div>
-
-            {/* Team 3 */}
-            <div className="bg-zinc-900 rounded-lg overflow-hidden">
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-2">Equipe de Design no Grupo Boticário</h3>
-                <p className="text-emerald-400 mb-6">2016 - 2019</p>
+                <p className="text-emerald-400 mb-6">2023 - 2024</p>
                 <p className="text-gray-400 mb-6">
-                  Coordenou uma equipe de 6 designers responsáveis pelo design de experiência do usuário para
-                  plataformas de e-commerce e aplicativos móveis. Trabalhou em estreita colaboração com equipes de
+                  Coordenei uma equipe de 7 designers responsáveis pelo design de experiência do usuário para
+                  plataformas de e-commerce e aplicativos móveis. Trabalhei em estreita colaboração com equipes de
                   produto, marketing e tecnologia para criar experiências digitais coesas e centradas no usuário.
                 </p>
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold text-white mb-3">Composição da Equipe:</h4>
                   <ul className="text-gray-400 space-y-2 list-disc pl-5">
-                    <li>3 UX/UI Designers</li>
+                    <li>4 Product Designers</li>
                     <li>2 Visual Designers</li>
                     <li>1 Pesquisador UX</li>
                   </ul>
@@ -148,6 +129,43 @@ export default function TimesPage() {
                     <li>Desenvolvimento de um aplicativo de fidelidade premiado</li>
                     <li>Implementação de processos de pesquisa com usuários</li>
                     <li>Criação de um sistema de design unificado para todas as marcas do grupo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Team 3 - Itaú (movido da segunda para a terceira posição) */}
+            <div className="bg-zinc-900 rounded-lg overflow-hidden">
+              <div className="w-full h-64 overflow-hidden">
+                <img
+                  src="/equipe-itau.jpg"
+                  alt="Equipe de UX do Itaú Unibanco"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-2">Equipe de UX no Itaú Unibanco</h3>
+                <p className="text-emerald-400 mb-6">2021 - 2023</p>
+                <p className="text-gray-400 mb-6">
+                  Liderei uma equipe de 8 profissionais responsáveis pelo design de experiência do usuário para produtos
+                  financeiros digitais. Implementei metodologias de pesquisa com usuários e testes de usabilidade que
+                  resultaram em melhorias significativas na experiência do cliente.
+                </p>
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-white mb-3">Composição da Equipe:</h4>
+                  <ul className="text-gray-400 space-y-2 list-disc pl-5">
+                    <li>6 UX/UI Designers</li>
+                    <li>1 Pesquisadores UX</li>
+                    <li>1 Content Designer</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-white mb-3">Principais Conquistas:</h4>
+                  <ul className="text-gray-400 space-y-2 list-disc pl-5">
+                    <li>Redesenho do aplicativo móvel com aumento de 40% na satisfação do usuário</li>
+                    <li>Implementação de processos de design thinking em toda a organização</li>
+                    <li>Desenvolvimento de um programa de pesquisa contínua com usuários</li>
+                    <li>Criação de processos facilitando a esteira de evolição de produtos</li>
                   </ul>
                 </div>
               </div>

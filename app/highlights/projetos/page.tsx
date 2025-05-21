@@ -11,7 +11,7 @@ export default function ProjetosPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-8">Meus Principais Projetos</h1>
         </div>
         <img
-          src="/placeholder.svg?height=1080&width=1920&query=portfolio%20showcase%20projects"
+          src="/portfolio-showcase.png"
           alt="Principais Projetos"
           className="absolute inset-0 w-full h-full object-cover object-center -z-10 opacity-30"
         />
@@ -38,7 +38,33 @@ export default function ProjetosPage() {
 
           {/* Featured Projects */}
           <div className="space-y-16 mb-16">
-            {/* Project 1 */}
+            {/* Project 1 (Nova ordem - O Boticário) */}
+            <div className="bg-zinc-900 rounded-lg overflow-hidden">
+              <div className="relative h-80">
+                <img
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_4uhos97b93RHpk198pzvUw-xW0KYZADFUTX1IGQLocVgwkbWNnbaF.webp"
+                  alt="Experiência de Varejo O Boticário"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                <div className="absolute bottom-0 left-0 p-6">
+                  <h3 className="text-2xl font-bold text-white">Experiência de Varejo O Boticário</h3>
+                  <p className="text-amber-400">UX Designer</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-400 mb-6">
+                  Redesenhou a experiência de varejo para O Grupo Boticário, integrando canais digitais e físicos para
+                  criar uma jornada omnichannel perfeita. O projeto resultou em um aumento significativo no engajamento
+                  do cliente e nas vendas através da integração omnichannel.
+                </p>
+                <Button className="bg-amber-600 hover:bg-amber-700 text-white" asChild>
+                  <Link href="/projects/retail-experience">Ver detalhes do projeto</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Project 2 (Nova ordem - Itaú) */}
             <div className="bg-zinc-900 rounded-lg overflow-hidden">
               <div className="relative h-80">
                 <img
@@ -64,7 +90,7 @@ export default function ProjetosPage() {
               </div>
             </div>
 
-            {/* Project 2 */}
+            {/* Project 3 (Nova ordem - Santander) */}
             <div className="bg-zinc-900 rounded-lg overflow-hidden">
               <div className="relative h-80">
                 <img
@@ -86,32 +112,6 @@ export default function ProjetosPage() {
                 </p>
                 <Button className="bg-amber-600 hover:bg-amber-700 text-white" asChild>
                   <Link href="/projects/cartao-free-santander">Ver detalhes do projeto</Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Project 3 */}
-            <div className="bg-zinc-900 rounded-lg overflow-hidden">
-              <div className="relative h-80">
-                <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_4uhos97b93RHpk198pzvUw-xW0KYZADFUTX1IGQLocVgwkbWNnbaF.webp"
-                  alt="Experiência de Varejo O Boticário"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-6">
-                  <h3 className="text-2xl font-bold text-white">Experiência de Varejo O Boticário</h3>
-                  <p className="text-amber-400">UX Designer</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-gray-400 mb-6">
-                  Redesenhou a experiência de varejo para O Grupo Boticário, integrando canais digitais e físicos para
-                  criar uma jornada omnichannel perfeita. O projeto resultou em um aumento significativo no engajamento
-                  do cliente e nas vendas através da integração omnichannel.
-                </p>
-                <Button className="bg-amber-600 hover:bg-amber-700 text-white" asChild>
-                  <Link href="/projects/retail-experience">Ver detalhes do projeto</Link>
                 </Button>
               </div>
             </div>
