@@ -90,12 +90,12 @@ export default function TrajetoriaPage() {
               {/* Timeline Item 4 (antigo item 3) */}
               <div className="relative">
                 <div className="absolute -left-10 mt-1.5 h-4 w-4 rounded-full bg-emerald-500"></div>
-                <h3 className="text-xl font-bold text-white">UX Designer - Grupo Boticário</h3>
+                <h3 className="text-xl font-bold text-white">Product Design Manager of UX/HMI | Connectivity | Innovation</h3>
                 <p className="text-emerald-400 mb-4">2016 - 2019</p>
                 <p className="text-gray-400 mb-4">
-                  Responsável pelo design de experiência do usuário para plataformas de e-commerce e aplicativos móveis.
-                  Trabalhou em estreita colaboração com equipes de produto, marketing e tecnologia para criar
-                  experiências digitais coesas e centradas no usuário.
+                  Responsável por definir e liderar a estratégia de design junto a unidade de negócios, tecnologia e inovação, que está reinventando os produtos e serviços com base na conectividade e no User Experience do setor de mobilidade no Brasil. Minhas responsabilidades incluem o direcionamento de pesquisa, a caracterização do público-alvo, a identificação de necessidades e pain points e o suporte em pesquisas, Customer Insights e Business Analysis. Também faço o direcionamento criativo, conceito, visão de design, experiência e interação com as áreas de Marketing, Business Development, General Management, Engineering e Product Management.
+                  
+                  Meu trabalho colabora para o futuro da mobilidade e conectividade do setor automotivo centrado no usuário.
                 </p>
                 <ul className="text-gray-400 space-y-2 list-disc pl-5">
                   <li>Redesenho da plataforma de e-commerce com aumento de 35% na taxa de conversão</li>
