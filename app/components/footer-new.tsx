@@ -37,7 +37,7 @@ export default function FooterNew() {
               <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
             <a
-              href="https://linkedin.com/in/robramosux"
+              href="https://www.linkedin.com/in/robsonramoss"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center px-8 py-4 bg-zinc-800/50 text-white font-semibold rounded-2xl border border-zinc-700 hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300 w-full sm:w-auto"
@@ -59,7 +59,7 @@ export default function FooterNew() {
             </p>
             <div className="flex items-center gap-6">
               <a
-                href="https://linkedin.com/in/robramosux"
+                href="https://www.linkedin.com/in/robsonramoss"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-400 hover:text-white transition-colors"
