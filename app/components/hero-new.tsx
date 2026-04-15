@@ -1,9 +1,15 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { ArrowRight, Mail } from "lucide-react"
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { ArrowRight, Mail, X, Copy, Check, ExternalLink } from "lucide-react"
 
 export default function HeroNew() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [copied, setCopied] = useState(false)
+
+  const email = "robsonramosux@gmail.com"
+
   const scrollToProjects = () => {
     const projectsSection = document.querySelector("#projects")
     if (projectsSection) {
@@ -11,11 +17,10 @@ export default function HeroNew() {
     }
   }
 
-  const scrollToContact = () => {
-    const contactSection = document.querySelector("#contact")
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" })
-    }
+  const copyEmail = () => {
+    navigator.clipboard.writeText(email)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 2000)
   }
 
   return (
@@ -88,7 +93,7 @@ export default function HeroNew() {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
-              onClick={scrollToContact}
+              onClick={() => setIsModalOpen(true)}
               className="group inline-flex items-center justify-center px-8 py-4 bg-zinc-800/50 text-white font-semibold rounded-2xl border border-zinc-700 hover:bg-zinc-800 hover:border-zinc-600 transition-all duration-300"
             >
               <Mail className="mr-2 h-5 w-5" />
@@ -244,6 +249,90 @@ export default function HeroNew() {
           </motion.div>
         </div>
       </div>
+
+      {/* Email Modal */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsModalOpen(false)}
+              className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50"
+            />
+            
+            {/* Modal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ duration: 0.2 }}
+              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md mx-4"
+            >
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl p-8 shadow-2xl">
+                {/* Close button */}
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="absolute top-4 right-4 p-2 text-zinc-500 hover:text-white transition-colors"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+
+                {/* Content */}
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Mail className="h-8 w-8 text-emerald-500" />
+                  </div>
+                  
+                  <h3 className="text-2xl font-bold text-white mb-3">Vamos conversar!</h3>
+                  <p className="text-zinc-400 mb-6">
+                    Estou esperando o seu contato para criarmos produtos digitais incríveis.
+                  </p>
+
+                  {/* Email display */}
+                  <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl p-4 mb-6">
+                    <p className="text-emerald-400 font-mono text-lg">{email}</p>
+                  </div>
+
+                  {/* Actions */}
+                  <div className="flex flex-col gap-3">
+                    <button
+                      onClick={copyEmail}
+                      className={`w-full inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                        copied
+                          ? "bg-emerald-500 text-white"
+                          : "bg-white text-black hover:bg-zinc-200"
+                      }`}
+                    >
+                      {copied ? (
+                        <>
+                          <Check className="mr-2 h-5 w-5" />
+                          Email copiado!
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="mr-2 h-5 w-5" />
+                          Copiar email
+                        </>
+                      )}
+                    </button>
+                    
+                    <a
+                      href={`mailto:${email}`}
+                      className="w-full inline-flex items-center justify-center px-6 py-3 bg-zinc-800 text-white rounded-xl font-semibold hover:bg-zinc-700 transition-all duration-300"
+                    >
+                      <ExternalLink className="mr-2 h-5 w-5" />
+                      Abrir no cliente de email
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </section>
   )
 }
