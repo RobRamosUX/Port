@@ -151,10 +151,12 @@ export default function HeroNew() {
               
               {/* PicPay */}
               <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full bg-[#21C25E] flex items-center justify-center">
-                  <svg viewBox="0 0 24 24" className="w-8 h-8 text-white" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
+                <div className="w-16 h-16 rounded-full overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mTHFrLZwwPHUxrqHuOIdZtgqGJl7nW.png" 
+                    alt="PicPay"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <span className="text-xs text-zinc-500">PicPay</span>
               </div>
