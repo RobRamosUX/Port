@@ -132,7 +132,7 @@ export default function HeroNew() {
                     />
                   </div>
                   <div className="text-center">
-                    <span className="text-xs font-semibold text-emerald-400">2019</span>
+                    <span className="text-xs font-semibold text-emerald-400">Designer Senior</span>
                     <p className="text-xs text-zinc-500 mt-1">Santander</p>
                   </div>
                 </motion.div>
@@ -152,7 +152,7 @@ export default function HeroNew() {
                     />
                   </div>
                   <div className="text-center">
-                    <span className="text-xs font-semibold text-emerald-400">2021</span>
+                    <span className="text-xs font-semibold text-emerald-400">Design Lead</span>
                     <p className="text-xs text-zinc-500 mt-1">Itaú</p>
                   </div>
                 </motion.div>
@@ -172,7 +172,7 @@ export default function HeroNew() {
                     />
                   </div>
                   <div className="text-center">
-                    <span className="text-xs font-semibold text-emerald-400">2022</span>
+                    <span className="text-xs font-semibold text-emerald-400">Design Lead</span>
                     <p className="text-xs text-zinc-500 mt-1">Boticário</p>
                   </div>
                 </motion.div>
@@ -188,7 +188,7 @@ export default function HeroNew() {
                     <span className="text-white text-xs font-bold">bs2</span>
                   </div>
                   <div className="text-center">
-                    <span className="text-xs font-semibold text-emerald-400">2024</span>
+                    <span className="text-xs font-semibold text-emerald-400">Design Manager</span>
                     <p className="text-xs text-zinc-500 mt-1">Banco BS2</p>
                   </div>
                 </motion.div>
@@ -208,7 +208,7 @@ export default function HeroNew() {
                     />
                   </div>
                   <div className="text-center">
-                    <span className="text-xs font-semibold text-emerald-400">2025</span>
+                    <span className="text-xs font-semibold text-emerald-400">Design Manager</span>
                     <p className="text-xs text-zinc-500 mt-1">PicPay</p>
                   </div>
                 </motion.div>
