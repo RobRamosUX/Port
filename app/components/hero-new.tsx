@@ -96,69 +96,122 @@ export default function HeroNew() {
             </button>
           </motion.div>
 
-          {/* Companies */}
+          {/* Companies Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 pt-16 border-t border-zinc-800"
           >
-            <p className="text-sm text-zinc-500 mb-8 text-center">Empresas onde atuei</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-              {/* Banco BS2 */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full bg-[#1a1a6e] flex items-center justify-center">
-                  <span className="text-white text-xs font-bold">bs2</span>
-                </div>
-                <span className="text-xs text-zinc-500">Banco BS2</span>
-              </div>
+            <p className="text-sm text-zinc-500 mb-10 text-center">Empresas onde atuei</p>
+            
+            {/* Timeline Container */}
+            <div className="relative">
+              {/* Timeline Line */}
+              <motion.div 
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
+                className="absolute top-8 left-0 right-0 h-[2px] bg-gradient-to-r from-zinc-800 via-emerald-500/50 to-zinc-800 origin-left hidden md:block"
+              />
               
-              {/* Grupo Boticário */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/boti-yAejTKkjDBCXL1pncttrWvJOhQqbo9.png" 
-                    alt="Grupo Boticário"
-                    className="w-10 h-10 object-contain"
-                  />
-                </div>
-                <span className="text-xs text-zinc-500">Grupo Boticário</span>
-              </div>
-              
-              {/* Itaú */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/itaunew-pNgfIUbX2WCfKqOuEc3bxMpdObDeNP.png" 
-                    alt="Itaú"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <span className="text-xs text-zinc-500">Itaú</span>
-              </div>
-              
-              {/* Santander */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/santander-xTt7RJqbDJy9zVZATLdqeJo9EegomB.png" 
-                    alt="Santander"
-                    className="w-10 h-10 object-contain"
-                  />
-                </div>
-                <span className="text-xs text-zinc-500">Santander</span>
-              </div>
-              
-              {/* PicPay */}
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-16 h-16 rounded-full overflow-hidden">
-                  <img 
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mTHFrLZwwPHUxrqHuOIdZtgqGJl7nW.png" 
-                    alt="PicPay"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <span className="text-xs text-zinc-500">PicPay</span>
+              {/* Companies */}
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
+                {/* Santander - 2019 */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="flex flex-col items-center gap-3 relative"
+                >
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-zinc-900 z-10 hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/santander-xTt7RJqbDJy9zVZATLdqeJo9EegomB.png" 
+                      alt="Santander"
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <span className="text-xs font-semibold text-emerald-400">2019</span>
+                    <p className="text-xs text-zinc-500 mt-1">Santander</p>
+                  </div>
+                </motion.div>
+                
+                {/* Itaú - 2021 */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.8 }}
+                  className="flex flex-col items-center gap-3 relative"
+                >
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-zinc-900 z-10 hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/itaunew-pNgfIUbX2WCfKqOuEc3bxMpdObDeNP.png" 
+                      alt="Itaú"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <span className="text-xs font-semibold text-emerald-400">2021</span>
+                    <p className="text-xs text-zinc-500 mt-1">Itaú</p>
+                  </div>
+                </motion.div>
+                
+                {/* Grupo Boticário - 2022 */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 1.0 }}
+                  className="flex flex-col items-center gap-3 relative"
+                >
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-zinc-900 z-10 hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/boti-yAejTKkjDBCXL1pncttrWvJOhQqbo9.png" 
+                      alt="Grupo Boticário"
+                      className="w-10 h-10 object-contain"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <span className="text-xs font-semibold text-emerald-400">2022</span>
+                    <p className="text-xs text-zinc-500 mt-1">Boticário</p>
+                  </div>
+                </motion.div>
+                
+                {/* Banco BS2 - 2024 */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 1.2 }}
+                  className="flex flex-col items-center gap-3 relative"
+                >
+                  <div className="w-16 h-16 rounded-full bg-[#1a1a6e] flex items-center justify-center border-4 border-zinc-900 z-10 hover:scale-110 transition-transform duration-300">
+                    <span className="text-white text-xs font-bold">bs2</span>
+                  </div>
+                  <div className="text-center">
+                    <span className="text-xs font-semibold text-emerald-400">2024</span>
+                    <p className="text-xs text-zinc-500 mt-1">Banco BS2</p>
+                  </div>
+                </motion.div>
+                
+                {/* PicPay - 2025 */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 1.4 }}
+                  className="flex flex-col items-center gap-3 relative"
+                >
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-zinc-900 z-10 hover:scale-110 transition-transform duration-300">
+                    <img 
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mTHFrLZwwPHUxrqHuOIdZtgqGJl7nW.png" 
+                      alt="PicPay"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <span className="text-xs font-semibold text-emerald-400">2025</span>
+                    <p className="text-xs text-zinc-500 mt-1">PicPay</p>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
