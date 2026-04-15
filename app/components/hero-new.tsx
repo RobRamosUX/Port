@@ -109,8 +109,8 @@ export default function HeroNew() {
                 <p className="text-sm text-zinc-500 mt-1">Anos de experiência</p>
               </div>
               <div>
-                <p className="text-3xl sm:text-4xl font-bold text-white">26%</p>
-                <p className="text-sm text-zinc-500 mt-1">Aumento em adoção</p>
+                <p className="text-3xl sm:text-4xl font-bold text-white">5+</p>
+                <p className="text-sm text-zinc-500 mt-1">Times liderados</p>
               </div>
               <div>
                 <p className="text-3xl sm:text-4xl font-bold text-white">40+</p>
