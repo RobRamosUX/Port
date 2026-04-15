@@ -53,7 +53,7 @@ export default function HeroNew() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
           >
-            Product Designer focado em{" "}
+            Design Manager focado em{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
               crescimento
             </span>{" "}
