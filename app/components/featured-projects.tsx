@@ -18,28 +18,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "digital-banking",
-    title: "Digital Banking Growth",
-    description: "Aumento de adoção de 2% para 26% através de redesign estratégico da jornada",
-    metric: "+1200%",
-    metricLabel: "Aumento na adoção",
-    icon: <TrendingUp className="h-5 w-5" />,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1740595955181-SfP7w4V7Ze2vLjUZ0SvIgxIVDwQygf.jpeg",
-    tags: ["Fintech", "Growth", "Strategy"],
-    href: "/case/digital-banking",
-  },
-  {
-    id: "automotive-hmi",
-    title: "Automotive HMI",
-    description: "Redesign da experiência embarcada focado em usabilidade e segurança",
-    metric: "40%",
-    metricLabel: "Redução em tempo de tarefa",
-    icon: <Shield className="h-5 w-5" />,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0_KAHvf_ZTfRK48Rdm-g1SdEerX3K0oL1IJDJ3mQlEA0behZJ.webp",
-    tags: ["Automotive", "HMI", "Safety"],
-    href: "/case/automotive-hmi",
-  },
-  {
     id: "retail-experience",
     title: "O Grupo Boticário",
     description: "Reinventando a experiência de varejo através de inovação digital e jornada omnichannel",
@@ -60,6 +38,28 @@ const projects: Project[] = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-03-06%20at%2011.55.42-su41Uu4KsvIaRyNzhhn5Sq07YX9484.png",
     tags: ["Fintech", "Banking", "UX"],
     href: "/projects/credito-consignado-itau",
+  },
+  {
+    id: "digital-banking",
+    title: "Digital Banking Growth",
+    description: "Aumento de adoção de 2% para 26% através de redesign estratégico da jornada",
+    metric: "+1200%",
+    metricLabel: "Aumento na adoção",
+    icon: <TrendingUp className="h-5 w-5" />,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1740595955181-SfP7w4V7Ze2vLjUZ0SvIgxIVDwQygf.jpeg",
+    tags: ["Fintech", "Growth", "Strategy"],
+    href: "/case/digital-banking",
+  },
+  {
+    id: "automotive-hmi",
+    title: "Automotive HMI",
+    description: "Redesign da experiência embarcada focado em usabilidade e segurança",
+    metric: "40%",
+    metricLabel: "Redução em tempo de tarefa",
+    icon: <Shield className="h-5 w-5" />,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0_KAHvf_ZTfRK48Rdm-g1SdEerX3K0oL1IJDJ3mQlEA0behZJ.webp",
+    tags: ["Automotive", "HMI", "Safety"],
+    href: "/case/automotive-hmi",
   },
 ]
 
