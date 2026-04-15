@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Users, Target, TrendingUp, MessageSquare, Compass, Handshake } from "lucide-react"
+import { Users, Target, TrendingUp, MessageSquare, Compass, Handshake, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 const leadershipAreas = [
   {
@@ -109,6 +110,91 @@ export default function LeadershipSection() {
                 <span className="text-zinc-300">{impact}</span>
               </motion.div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* Teams Gallery */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16"
+        >
+          <div className="flex items-center justify-between mb-8">
+            <h3 className="text-2xl font-semibold text-white">Times que liderei</h3>
+            <Link 
+              href="/highlights/times" 
+              className="text-emerald-500 hover:text-emerald-400 transition-colors text-sm flex items-center gap-1"
+            >
+              Ver detalhes
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Banco BS2 */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+            >
+              <img 
+                src="/equipe-bs2.jpg" 
+                alt="Equipe de UX do Banco BS2" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-emerald-400 text-sm font-medium mb-1">2024 - Atual</p>
+                <h4 className="text-white font-semibold text-lg">Banco BS2</h4>
+                <p className="text-zinc-400 text-sm mt-1">8 profissionais</p>
+              </div>
+            </motion.div>
+
+            {/* Grupo Boticário */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+            >
+              <img 
+                src="/equipe-boticario.jpg" 
+                alt="Equipe de Design do Grupo Boticário" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-emerald-400 text-sm font-medium mb-1">2023 - 2024</p>
+                <h4 className="text-white font-semibold text-lg">Grupo Boticário</h4>
+                <p className="text-zinc-400 text-sm mt-1">7 designers</p>
+              </div>
+            </motion.div>
+
+            {/* Itaú Unibanco */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.3 }}
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+            >
+              <img 
+                src="/equipe-itau.jpg" 
+                alt="Equipe de UX do Itaú Unibanco" 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <p className="text-emerald-400 text-sm font-medium mb-1">2021 - 2023</p>
+                <h4 className="text-white font-semibold text-lg">Itaú Unibanco</h4>
+                <p className="text-zinc-400 text-sm mt-1">8 profissionais</p>
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
