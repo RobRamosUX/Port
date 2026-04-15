@@ -96,12 +96,77 @@ export default function HeroNew() {
             </button>
           </motion.div>
 
-          {/* Stats */}
+          {/* Companies */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="mt-16 pt-16 border-t border-zinc-800"
+          >
+            <p className="text-sm text-zinc-500 mb-8 text-center">Empresas onde atuei</p>
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+              {/* Banco BS2 */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-[#1a1a6e] flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">bs2</span>
+                </div>
+                <span className="text-xs text-zinc-500">Banco BS2</span>
+              </div>
+              
+              {/* Grupo Boticário */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/boti-yAejTKkjDBCXL1pncttrWvJOhQqbo9.png" 
+                    alt="Grupo Boticário"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <span className="text-xs text-zinc-500">Grupo Boticário</span>
+              </div>
+              
+              {/* Itaú */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/itaunew-pNgfIUbX2WCfKqOuEc3bxMpdObDeNP.png" 
+                    alt="Itaú"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span className="text-xs text-zinc-500">Itaú</span>
+              </div>
+              
+              {/* Santander */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/santander-xTt7RJqbDJy9zVZATLdqeJo9EegomB.png" 
+                    alt="Santander"
+                    className="w-10 h-10 object-contain"
+                  />
+                </div>
+                <span className="text-xs text-zinc-500">Santander</span>
+              </div>
+              
+              {/* PicPay */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-[#21C25E] flex items-center justify-center">
+                  <svg viewBox="0 0 24 24" className="w-8 h-8 text-white" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <span className="text-xs text-zinc-500">PicPay</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-12 pt-12 border-t border-zinc-800"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
@@ -117,7 +182,7 @@ export default function HeroNew() {
                 <p className="text-sm text-zinc-500 mt-1">Mentorados</p>
               </div>
               <div>
-                <p className="text-3xl sm:text-4xl font-bold text-white">4</p>
+                <p className="text-3xl sm:text-4xl font-bold text-white">5</p>
                 <p className="text-sm text-zinc-500 mt-1">Grandes empresas</p>
               </div>
             </div>
