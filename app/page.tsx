@@ -3,7 +3,7 @@ import FeaturedProjects from "./components/featured-projects"
 import ThinkingSection from "./components/thinking-section"
 import LeadershipSection from "./components/leadership-section"
 import TestimonialsNew from "./components/testimonials-new"
-import TimelineSection from "./components/timeline-section"
+
 import FooterNew from "./components/footer-new"
 
 export default function Page() {
@@ -14,7 +14,6 @@ export default function Page() {
       <ThinkingSection />
       <LeadershipSection />
       <TestimonialsNew />
-      <TimelineSection />
       <FooterNew />
     </main>
   )
