@@ -57,7 +57,7 @@ const projects: Project[] = [
     metric: "40%",
     metricLabel: "Redução em tempo de tarefa",
     icon: <Shield className="h-5 w-5" />,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0_KAHvf_ZTfRK48Rdm-g1SdEerX3K0oL1IJDJ3mQlEA0behZJ.webp",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dpovSOfA6PZ4kxHYT5qrDfYYVyuo6U.png",
     tags: ["Automotive", "HMI", "Safety"],
     href: "/case/automotive-hmi",
   },
