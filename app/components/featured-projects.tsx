@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, TrendingUp, Shield, ShoppingBag, CreditCard } from "lucide-react"
+import { ArrowUpRight, TrendingUp, Shield, ShoppingBag, CreditCard, Smartphone } from "lucide-react"
 import Link from "next/link"
 
 interface Project {
@@ -17,6 +17,17 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: "picpay-shop",
+    title: "PicPay Shop - Black Friday 2025",
+    description: "Melhor desempenho do hub de consumo desde o lançamento. O marketplace integrado triplicou o GMV com aumento de 104% nas transações",
+    metric: "3x",
+    metricLabel: "GMV na Black Friday",
+    icon: <Smartphone className="h-5 w-5" />,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Captura%20de%20tela_15-4-2026_15223_blog.picpay.com-7NwRMRB9fzYU9CGjwcSJfOqvlrBjXW.jpeg",
+    tags: ["Marketplace", "E-commerce", "Fintech"],
+    href: "/projects/picpay-shop",
+  },
   {
     id: "retail-experience",
     title: "O Grupo Boticário",
