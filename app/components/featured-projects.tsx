@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, TrendingUp, Shield, ShoppingBag } from "lucide-react"
+import { ArrowUpRight, TrendingUp, Shield, ShoppingBag, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 interface Project {
@@ -49,6 +49,17 @@ const projects: Project[] = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_4uhos97b93RHpk198pzvUw-xW0KYZADFUTX1IGQLocVgwkbWNnbaF.webp",
     tags: ["Retail", "Omnichannel", "UX"],
     href: "/projects/retail-experience",
+  },
+  {
+    id: "credito-consignado-itau",
+    title: "Crédito Consignado Itaú",
+    description: "Simplificação e digitalização do processo de crédito consignado para melhorar a experiência do usuário",
+    metric: "+45%",
+    metricLabel: "Aumento em conversão",
+    icon: <CreditCard className="h-5 w-5" />,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-03-06%20at%2011.55.42-su41Uu4KsvIaRyNzhhn5Sq07YX9484.png",
+    tags: ["Fintech", "Banking", "UX"],
+    href: "/projects/credito-consignado-itau",
   },
 ]
 
