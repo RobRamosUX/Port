@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, TrendingUp, Shield } from "lucide-react"
+import { ArrowUpRight, TrendingUp, Shield, ShoppingBag } from "lucide-react"
 import Link from "next/link"
 
 interface Project {
@@ -38,6 +38,17 @@ const projects: Project[] = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/0_KAHvf_ZTfRK48Rdm-g1SdEerX3K0oL1IJDJ3mQlEA0behZJ.webp",
     tags: ["Automotive", "HMI", "Safety"],
     href: "/case/automotive-hmi",
+  },
+  {
+    id: "retail-experience",
+    title: "O Grupo Boticário",
+    description: "Reinventando a experiência de varejo através de inovação digital e jornada omnichannel",
+    metric: "+35%",
+    metricLabel: "Aumento em engajamento",
+    icon: <ShoppingBag className="h-5 w-5" />,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_4uhos97b93RHpk198pzvUw-xW0KYZADFUTX1IGQLocVgwkbWNnbaF.webp",
+    tags: ["Retail", "Omnichannel", "UX"],
+    href: "/projects/retail-experience",
   },
 ]
 
