@@ -148,7 +148,7 @@ export default function LeadershipSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <p className="text-emerald-400 text-sm font-medium mb-1">2024 - Atual</p>
+                <p className="text-emerald-400 text-sm font-medium mb-1">2024 - 2025</p>
                 <h4 className="text-white font-semibold text-lg">Banco BS2</h4>
                 <p className="text-zinc-400 text-sm mt-1">8 profissionais</p>
               </div>
