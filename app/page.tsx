@@ -1,23 +1,21 @@
-import Hero from "./components/hero"
-import Highlights from "./components/highlights"
-import Gallery from "./components/gallery"
-import Portfolio from "./components/portfolio"
-import Testimonials from "./components/testimonials"
-import LinkedInPosts from "./components/linkedin-posts"
-import Contact from "./components/contact"
-import Footer from "./components/footer"
+import HeroNew from "./components/hero-new"
+import FeaturedProjects from "./components/featured-projects"
+import ThinkingSection from "./components/thinking-section"
+import LeadershipSection from "./components/leadership-section"
+import TestimonialsNew from "./components/testimonials-new"
+import TimelineSection from "./components/timeline-section"
+import FooterNew from "./components/footer-new"
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <Hero />
-      <Highlights />
-      <Gallery />
-      <Portfolio />
-      <Testimonials />
-      <LinkedInPosts />
-      <Contact />
-      <Footer />
+      <HeroNew />
+      <FeaturedProjects />
+      <ThinkingSection />
+      <LeadershipSection />
+      <TestimonialsNew />
+      <TimelineSection />
+      <FooterNew />
     </main>
   )
 }
