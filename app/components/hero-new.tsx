@@ -46,9 +46,9 @@ export default function HeroNew() {
             className="flex items-center gap-4 mb-8"
           >
             <div className="relative">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-lg shadow-emerald-500/20">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-lg shadow-emerald-500/20">
                 <img 
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/eu2025.jpg-rcBQzLYgS3n9N0i9AKv2rkF2lAMQdA.jpeg" 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/minhafoto-Ttt8q6OJFm5TIkzzZ9ODf7aSfTRRcA.jpeg" 
                   alt="Robson Ramos"
                   className="w-full h-full object-cover"
                 />
