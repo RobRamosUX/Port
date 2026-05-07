@@ -46,14 +46,29 @@ export default function HeroNew() {
             className="flex items-center gap-4 mb-8"
           >
             <div className="relative">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-lg shadow-emerald-500/20">
+              {/* Spinning glowing ring */}
+              <div className="absolute -inset-1 rounded-full">
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                  className="w-full h-full rounded-full"
+                  style={{
+                    background: "conic-gradient(from 0deg, transparent, #10b981, #34d399, #6ee7b7, transparent)",
+                  }}
+                />
+              </div>
+              {/* Glow effect */}
+              <div className="absolute -inset-2 rounded-full bg-emerald-500/20 blur-md animate-pulse" />
+              
+              {/* Avatar container */}
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-black bg-black">
                 <img 
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/minhafoto-Ttt8q6OJFm5TIkzzZ9ODf7aSfTRRcA.jpeg" 
                   alt="Robson Ramos"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-black flex items-center justify-center">
+              <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-black flex items-center justify-center z-10">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
               </span>
             </div>
