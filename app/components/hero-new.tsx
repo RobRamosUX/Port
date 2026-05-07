@@ -38,17 +38,31 @@ export default function HeroNew() {
 
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto">
-          {/* Badge */}
+          {/* Avatar and Name */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-8"
+            className="flex items-center gap-4 mb-8"
           >
-            <span className="inline-flex items-center px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm text-zinc-400">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse" />
-              Disponível para novos desafios
-            </span>
+            <div className="relative">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-emerald-500/50 shadow-lg shadow-emerald-500/20">
+                <img 
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/minhafoto-Ttt8q6OJFm5TIkzzZ9ODf7aSfTRRcA.jpeg" 
+                  alt="Robson Ramos"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <span className="absolute -bottom-1 -right-1 w-5 h-5 bg-emerald-500 rounded-full border-2 border-black flex items-center justify-center">
+                <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
+              </span>
+            </div>
+            <div>
+              <h2 className="text-lg sm:text-xl font-semibold text-white">Robson Ramos</h2>
+              <span className="inline-flex items-center text-sm text-zinc-400">
+                Disponível para novos desafios
+              </span>
+            </div>
           </motion.div>
 
           {/* Main Title */}
